@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "film fusion web app",
   "scripts": {
-    "commitlint": "commitlint --config .commitlintrc.json -e -V"
+    "commitlint": "commitlint --config .commitlintrc.json -e -V",
+    "lint-staged": "lint-staged"
   },
   "keywords": [],
   "author": "",
@@ -11,6 +12,8 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.3",
     "@commitlint/config-conventional": "^17.6.3",
-    "husky": "^8.0.3"
+    "eslint": "^8.40.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2"
   }
 }
