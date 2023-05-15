@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "target": "ES6",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "allowJs": false,
+        "strict": true,
+        "jsx": "react",
+        "lib": ["ESNext", "DOM"],
+        "rootDir": ".",
+    },
+    "include": ["packages/**/*"]
+}
