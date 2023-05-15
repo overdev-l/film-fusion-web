@@ -1,0 +1,13 @@
+{
+  "name": "film-fusion-web",
+  "version": "1.0.0",
+  "description": "film fusion web app",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3"
+  }
+}
