@@ -1,7 +1,7 @@
 {
-  "name": "client",
+  "name": "film-fusion-web",
   "version": "1.0.0",
-  "description": "",
+  "description": "film fusion with web app",
   "main": "index.js",
   "scripts": {
     "dev": "rspack dev"
