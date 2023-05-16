@@ -2,6 +2,7 @@
     "extends":"../../tsconfig.base.json",
     "compilerOptions": {
         "strict": true,
+        "allowSyntheticDefaultImports": true,
         "baseUrl": "."
     },
     "include": ["./src", "index.ts"]
