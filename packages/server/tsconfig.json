@@ -8,8 +8,10 @@
         "sourceMap": true,
         "outDir": "dist",
         "baseUrl": ".",
+        "noUnusedLocals": false,
+        "noUnusedParameters": false
     },
-    "include": ["./src", "index.ts"],
+    "include": ["./src", "src/index.ts"],
     "ts-node": {
         "compilerOptions": {
           "module": "CommonJS"
