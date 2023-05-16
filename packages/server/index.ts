@@ -8,10 +8,8 @@ import * as dotenv from "dotenv"
 const args = minimist(process.argv.slice(2))
 function main() {
     useConfig()
-    console.log(process.env.PORT)
     const app: Express = express()
-    const port = 8000
-    app.listen(port, () => {
+    app.listen(process.env.PORT, () => {
         console.log('server starting')
     })
 }
