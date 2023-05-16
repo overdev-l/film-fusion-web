@@ -3,6 +3,7 @@
     "compilerOptions": {
         "esModuleInterop": true,
         "target": "es6",
+        "module": "commonjs",
         "noImplicitAny": true,
         "moduleResolution": "node",
         "sourceMap": true,
@@ -11,10 +12,5 @@
         "noUnusedLocals": false,
         "noUnusedParameters": false
     },
-    "include": ["./src", "src/index.ts"],
-    "ts-node": {
-        "compilerOptions": {
-          "module": "CommonJS"
-        }
-      }
+    "include": ["./src", "src/index.ts"]
 }

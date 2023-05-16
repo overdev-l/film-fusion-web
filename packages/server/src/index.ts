@@ -5,6 +5,7 @@ import * as trpcExpress from "@trpc/server/adapters/express"
 import minimist from "minimist"
 import * as dotenv from "dotenv"
 
+import { createContext } from "./trpc"
 import router from "./router"
 
 const args = minimist(process.argv.slice(2))
@@ -14,7 +15,8 @@ function main() {
     app.use(
         "/trpc",
         trpcExpress.createExpressMiddleware({
-            router
+            router,
+            createContext,
         })
     )
     app.listen(process.env.PORT, () => {
@@ -24,7 +26,7 @@ function main() {
 
 export const useConfig = () => {
     return dotenv.config({
-        path: path.resolve(__dirname, `./.${args.env}.env`)
+        path: path.resolve(__dirname, `../.${args.env}.env`)
     })
 }
 
