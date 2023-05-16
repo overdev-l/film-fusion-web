@@ -3,8 +3,11 @@
         "target": "ES6",
         "module": "ESNext",
         "moduleResolution": "node",
-        "jsx": "react-jsx",
         "lib": ["ESNext", "DOM"],
-        "rootDir": ".",
+        "noEmit": true,
+        "strict": true,
+        "isolatedModules": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true
     }
 }
