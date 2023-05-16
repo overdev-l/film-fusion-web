@@ -19,5 +19,9 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@trpc/client": "^10.26.0",
+    "@trpc/server": "^10.26.0"
   }
 }
