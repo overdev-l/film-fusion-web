@@ -12,7 +12,7 @@ function main() {
     useConfig()
     const app: Express = express()
     app.use(
-        "trpc",
+        "/trpc",
         trpcExpress.createExpressMiddleware({
             router
         })
