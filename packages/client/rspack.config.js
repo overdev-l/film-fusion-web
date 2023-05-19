@@ -22,6 +22,7 @@ module.exports = {
 		]
 	},
 	devServer: {
-		open: true
+		open: true,
+		port: 3000
 	}
 };

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "film fusion web app",
   "scripts": {
+    "dev": "turbo dev",
     "lint": "npx eslint packages/* --fix",
     "commitlint": "commitlint --config .commitlintrc.json -e -V",
     "lint-staged": "lint-staged"
@@ -18,6 +19,7 @@
     "eslint": "^8.40.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
+    "turbo": "^1.9.8",
     "typescript": "^5.0.4"
   },
   "dependencies": {

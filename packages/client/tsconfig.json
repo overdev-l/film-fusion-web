@@ -7,7 +7,6 @@
         "resolveJsonModule": true,
         "skipLibCheck":true,
         "allowImportingTsExtensions":true,
-        "baseUrl": "./"
     },
     "include": ["./src"]
 }

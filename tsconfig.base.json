@@ -8,6 +8,10 @@
         "strict": true,
         "isolatedModules": true,
         "noUnusedLocals": true,
-        "noUnusedParameters": true
-    }
+        "noUnusedParameters": true,
+        "baseUrl": ".",
+        "paths": {
+            "@server": ["packages/server/src"],
+        }
+    },
 }
