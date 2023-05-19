@@ -1,6 +1,8 @@
 declare namespace NodeJS {
     interface ProcessEnv {
-      [key: string]: any;
-      whiteList: Array<string>
+        [key: string]: any
+        PORT: number
+        NODE_ENV: string
+        whiteList: Array<string>
     }
-  }
+}
