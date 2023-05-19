@@ -1,18 +1,10 @@
-import { createTRPCProxyClient, httpBatchLink } from "@trpc/client"
-import { useEffect, useRef } from "react"
-
-import { appRouter } from "@server"
+import { useEffect } from "react"
+import { sayHello } from "./apis"
 
 export default function () {
-    const client = useRef(createTRPCProxyClient<appRouter>({
-        links: [
-            httpBatchLink({
-                url: "http://localhost:8080/trpc"
-            })
-        ]
-    }))
+
     const main = async () => {
-        const result = await client.current.sayHello.query()
+        const result = await sayHello()
         console.log(result)
     }
     useEffect(() => {

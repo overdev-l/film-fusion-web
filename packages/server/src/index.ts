@@ -9,16 +9,28 @@ import * as dotenv from "dotenv"
 import router from "./router"
 
 const args = minimist(process.argv.slice(2))
+
 function main() {
     useConfig()
     const app: Express = express()
+    if (args.env === "development") {
+        console.log(process.env.whiteList)
+        app.use(Cors({
+            origin: function (origin, callback) {
+                if (!origin) {
+                    callback(null, false)
+                }
+                if (process.env.whiteList.indexOf(origin as string) !== -1) {
+                    callback(null, true)
+                }
+            }
+        }))
+    }
     app.use(
         "/trpc",
         createExpressMiddleware({ router })
     )
-    if (args.env === "development") {
-        app.use(Cors({ origin: `http://localhost:3000` }))
-    }
+    
     app.listen(process.env.PORT, () => {
         console.log('server starting')
     })
