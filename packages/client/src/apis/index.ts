@@ -1,1 +1,1 @@
-export { sayHello, example, analysisText } from "./modules/app" 
+export { example, analysisText } from "./modules/app" 
